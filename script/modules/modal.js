@@ -3,30 +3,28 @@ export default class Modal {
     this.btnShowModal = document.querySelector(show);
     this.btnCloseModal = document.querySelector(close);
     this.modalContainer = document.querySelector(container);
-    this.showModal = this.showModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
+    this.eventToggleModal = this.eventToggleModal.bind(this);
     this.closeOnContainerClick = this.closeOnContainerClick.bind(this);
   }
 
-  showModal(event) {
+  eventToggleModal(event) {
     event.preventDefault();
-    this.modalContainer.classList.add("showModal");
+    this.toggleModal();
   }
 
-  closeModal(event) {
-    event.preventDefault();
-    this.modalContainer.classList.remove("showModal");
+  toggleModal() {
+    this.modalContainer.classList.toggle("showModal");
   }
 
   closeOnContainerClick(event) {
     if (event.target === this.modalContainer) {
-      this.closeModal(event);
+      this.modalContainer.classList.remove("showModal");
     }
   }
 
   addModalEvents() {
-    this.btnShowModal.addEventListener("click", this.showModal);
-    this.btnCloseModal.addEventListener("click", this.closeModal);
+    this.btnShowModal.addEventListener("click", this.eventToggleModal);
+    this.btnCloseModal.addEventListener("click", this.eventToggleModal);
     this.modalContainer.addEventListener("click", this.closeOnContainerClick);
   }
 
