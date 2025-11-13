@@ -1,6 +1,6 @@
 import initFaqAccordion from "./modules/accordion.js";
 import initScrollAnimation from "./modules/scroll-animation.js";
-import initSmoothScroll from "./modules/scroll-suave.js";
+import SmoothScroll from "./modules/scroll-suave.js";
 import initTabNav from "./modules/tabNav.js";
 import initModal from "./modules/modal.js";
 import initToolTip from "./modules/tooltip.js";
@@ -10,9 +10,11 @@ import initFuncionamento from "./modules/funcionamento.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBtc from "./modules/fetch-btc.js";
 
+const smoothScroll = new SmoothScroll('[data-scroll="suave"] a[href^="#"]');
+smoothScroll.init();
+
 initFaqAccordion();
 initScrollAnimation();
-initSmoothScroll();
 initTabNav();
 initModal();
 initToolTip();
