@@ -6,7 +6,6 @@ export default function initContador() {
       const valor = parseInt(numero.innerText);
       const multi = Math.floor(valor / 100);
       let start = 0;
-
       const timer = setInterval(() => {
         start += multi;
         numero.innerText = start;
@@ -18,14 +17,13 @@ export default function initContador() {
     });
   }
 
-  function handleMutation(mutation) {
-    if (mutation[0].target.classList.contains("animThis")) {
-      observer.disconnect();
-      contador();
-    }
-  }
-
   if (numeros.length) {
+    const handleMutation = (mutation) => {
+      if (mutation[0].target.classList.contains("animThis")) {
+        observer.disconnect();
+        contador();
+      }
+    };
     const observer = new MutationObserver(handleMutation);
     const observerTarget = document.querySelector(".contador");
     observer.observe(observerTarget, { attributes: true });
