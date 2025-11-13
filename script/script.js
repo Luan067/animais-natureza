@@ -2,7 +2,7 @@ import SmoothScroll from "./modules/scroll-suave.js";
 import Accordion from "./modules/accordion.js";
 import TabNav from "./modules/tabNav.js";
 import Modal from "./modules/modal.js";
-import initToolTip from "./modules/tooltip.js";
+import ToolTip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMobileMenu from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
@@ -16,13 +16,15 @@ smoothScroll.init();
 const accordion = new Accordion('[data-accordion="faq"] dt');
 accordion.init();
 
-const tabnav = new TabNav(".lista-animais-imagens li", ".animais-descricao section");
+const tabnav = new TabNav('.lista-animais-imagens li', '.animais-descricao section');
 tabnav.init();
 
 const modal = new Modal('[data-modal="abrir"]', '[data-modal="fechar"]', '[data-modal="container"]');
 modal.init();
 
-initToolTip();
+const tooltip = new ToolTip('[data-tooltip]');
+tooltip.init();
+
 initDropdownMenu();
 initMobileMenu();
 initFuncionamento();
