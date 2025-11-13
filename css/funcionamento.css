@@ -1,0 +1,14 @@
+[data-semana]::after {
+  display: inline-block;
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: #e54;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-left: 8px;
+}
+
+[data-semana].lojaAberta::after {
+  background-color: #3e4;
+}

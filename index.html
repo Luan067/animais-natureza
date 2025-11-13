@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animais da Natureza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <script>document.documentElement.className += ' js'</script>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <div class="main-grid-section">
+    <nav class="menu">
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">MENU</button>
+      <ul class="menu-lista" data-scroll="suave" data-menu="lista" id="menu">
+        <li><a href="#animais">ANIMAIS</a></li>
+        <li data-dropdown>
+          <a href="">Sobre</a>
+          <ul class="dropdown">
+            <li><a href="">A Empresa</a></li>
+            <li><a href="">Equipe</a></li>
+            <li><a href="">História</a></li>
+            <li><a href="">Parceiros</a></li>
+          </ul>
+        </li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contato">CONTATO</a></li>
+        <li><a href="" data-modal="abrir">Login →</a></li>
+      </ul>
+    </nav>
+
+    <section class="animais grid-section" id="animais" data-anime="scroll">
+      <h1 class="titulo">Animais da Natureza</h1>
+      <ul class="lista-animais-imagens">
+        <li><img src="./img/imagem1.jpg" alt=""></li>
+        <li><img src="./img/imagem2.jpg" alt=""></li>
+        <li><img src="./img/imagem3.jpg" alt=""></li>
+        <li><img src="./img/imagem4.jpg" alt=""></li>
+        <li><img src="./img/imagem5.jpg" alt=""></li>
+        <li><img src="./img/imagem6.jpg" alt=""></li>
+      </ul>
+      <div class="animais-descricao" data-tab="content">
+        <section class="animal-raposa" data-anime="showDown">
+          <h2>Raposa</h2>
+          <p>As raposas são mamíferos ágeis e inteligentes pertencentes à família Canidae, a mesma dos lobos e cães. Reconhecidas por sua pelagem avermelhada, focinho fino e cauda longa e farta, elas são símbolos de astúcia em diversas culturas.</p>
+          <p>Esses animais são extremamente adaptáveis, podendo viver em florestas, montanhas, campos abertos e até em áreas urbanas, onde aproveitam restos de alimento deixados pelos humanos.</p>
+          <p>As raposas são onívoras e possuem uma dieta variada que inclui pequenos roedores, frutas, insetos e aves. Essa flexibilidade alimentar contribui para seu sucesso em diferentes ambientes.</p>
+          <p>Existem cerca de 40 espécies de raposas, sendo a raposa-vermelha (Vulpes vulpes) a mais conhecida e amplamente distribuída pelo mundo.</p>
+        </section>
+        <section class="animal-esquilo" data-anime="showRight">
+          <h2>Esquilo</h2>
+          <p>Os esquilos são pequenos mamíferos roedores pertencentes à família Sciuridae. Vivem principalmente em áreas arborizadas e são conhecidos por sua agilidade ao subir e saltar entre galhos.</p>
+          <p>Possuem cauda longa e peluda, que ajuda no equilíbrio e na comunicação entre indivíduos da espécie.</p>
+          <p>Esses animais se alimentam de sementes, frutas e nozes, que costumam armazenar durante o outono para sobreviver ao inverno.</p>
+          <p>Além de sua aparência carismática, os esquilos desempenham um papel importante na dispersão de sementes nas florestas.</p>
+        </section>
+        <section class="animal-urso" data-anime="showRight">
+          <h2>Urso</h2>
+          <p>Os ursos são grandes mamíferos pertencentes à família Ursidae, encontrados em diversas regiões do mundo, desde florestas frias até montanhas e regiões polares.</p>
+          <p>São animais onívoros e possuem uma dieta variada que inclui frutas, mel, peixes e até pequenos mamíferos.</p>
+          <p>Apesar de sua aparência robusta e força impressionante, muitos ursos são solitários e preferem evitar conflitos.</p>
+          <p>Durante o inverno, algumas espécies entram em um estado de hibernação, reduzindo suas atividades para economizar energia.</p>
+        </section>
+        <section class="animal-lobo" data-anime="showRight">
+          <h2>Lobo</h2>
+          <p>Os lobos são mamíferos carnívoros pertencentes à família Canidae e são ancestrais diretos dos cães domésticos.</p>
+          <p>Vivem em bandos altamente organizados, liderados por um casal alfa que coordena a caça e protege o grupo.</p>
+          <p>São conhecidos por sua inteligência, resistência e forte senso de hierarquia social, o que garante a sobrevivência coletiva.</p>
+          <p>Habitam regiões frias e temperadas do hemisfério norte e desempenham papel fundamental no controle populacional de presas na natureza.</p>
+        </section>
+        <section class="animal-macaco" data-anime="showDown">
+          <h2>Macaco</h2>
+          <p>Os macacos são primatas inteligentes e sociáveis que vivem em grupos nas florestas tropicais e savanas.</p>
+          <p>Com grande habilidade manual, utilizam as mãos e caudas para se locomover entre árvores e manipular objetos e alimentos.</p>
+          <p>São conhecidos por sua curiosidade e capacidade de aprendizado, apresentando comportamentos complexos e comunicação vocal variada.</p>
+          <p>Alimentam-se principalmente de frutas, folhas e insetos, sendo fundamentais para o equilíbrio ecológico ao espalhar sementes pela floresta.</p>
+        </section>
+        <section class="animal-leao" data-anime="showRight">
+          <h2>Leão</h2>
+          <p>O leão é um grande felino da família Felidae, conhecido como o “rei da selva” devido à sua imponência e força.</p>
+          <p>Vive em grupos chamados alcateias ou coalizões, onde as fêmeas são responsáveis pela caça e os machos pela defesa do território.</p>
+          <p>É o único felino que apresenta uma juba, característica marcante dos machos adultos e símbolo de poder e maturidade.</p>
+          <p>Os leões habitam principalmente as savanas africanas e têm papel essencial na manutenção do equilíbrio ecológico como predadores de topo.</p>
+        </section>
+      </div>
+    </section>
+
+    <section class="faq grid-section" id="faq" data-anime="scroll">
+      <h1 class="faq-titulo titulo">FAQ</h1>
+      <dl class="faq-lista" data-accordion="faq">
+        <dt>Qual a idade dos animais?</dt>
+        <dd>A expectativa de vida varia conforme a espécie. Por exemplo, raposas vivem em média de 3 a 6 anos na natureza, enquanto lobos podem chegar a 6-8 anos e leões cerca de 10-14 anos. Animais em cativeiro geralmente vivem mais devido à proteção e alimentação regular.</dd>
+
+        <dt>Onde vivem?</dt>
+        <dd>Cada animal ocupa um habitat específico: raposas e lobos preferem florestas e áreas abertas; ursos habitam florestas, montanhas e regiões frias; leões vivem nas savanas africanas; macacos podem ser encontrados em florestas tropicais; e esquilos vivem em árvores e parques, próximos a fontes de alimento.</dd>
+
+        <dt>Qual a diferença?</dt>
+        <dd>Eles diferem em habitat, comportamento e alimentação: Raposas e lobos são canídeos, mas lobos vivem em bandos e caçam em grupo, enquanto raposas são mais solitárias. Ursos são onívoros de grande porte e solitários. Leões são felinos sociais que vivem em grupos chamados alcateias. Macacos são primatas ágeis e inteligentes, vivendo em árvores e interagindo socialmente. Esquilos são pequenos roedores que armazenam alimentos e saltam entre galhos.</dd>
+
+        <dt>Como proteger?</dt>
+        <dd>Proteção depende de conservar seus habitats naturais e reduzir a interferência humana. Evitar desmatamento, poluição e caça ilegal ajuda a preservar espécies. Apoiar reservas naturais, ONGs ambientais e programas de educação sobre fauna também contribui significativamente.</dd>
+      </dl>
+    </section>
+
+    <section class="grid-section contador" data-anime="scroll">
+      <h1 class="titulo">Números</h1>
+      <div class="contador-grid">
+      </div>
+    </section>
+
+    <section class="contato grid-section" id="contato" data-anime="scroll">
+      <h1 class="titulo">Contato</h1>
+      <div class="mapa" data-tooltip aria-label="Endereço próximo à Faculdade."><img src="./img/mapa3.png" alt=""></div>
+      <ul class="contato-lista">
+        <li>victorluan150206@gmail.com</li>
+        <li>+55 (95) 99125-9766</li>
+        <li>Boa Vista - RR</li>
+        <li data-semana="1,2,3,4,5" data-hora="8,18">Seg à Sexta das 8 às 18</li>
+        <li>Doe <span class="btc-valor">0</span> bitcoin para nos ajudar.</li>
+      </ul>
+    </section>
+
+    <footer class="direitos">Todos os direitos reservados.</footer>
+  </div>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button class="fechar" data-modal="fechar">X</button>
+      <form action="">
+        <label for="email">Email</label>
+        <input type="text" for="email"" id=" email">
+        <label for="senha">Senha</label>
+        <input type="password" for="senha"" id=" senha">
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </section>
+
+  <script type="module" src="./script/script.js"></script>
+</body>
+
+</html>
