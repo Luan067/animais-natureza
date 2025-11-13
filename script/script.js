@@ -1,6 +1,6 @@
 import SmoothScroll from "./modules/scroll-suave.js";
 import Accordion from "./modules/accordion.js";
-import initTabNav from "./modules/tabNav.js";
+import TabNav from "./modules/tabNav.js";
 import initModal from "./modules/modal.js";
 import initToolTip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
@@ -16,7 +16,9 @@ smoothScroll.init();
 const accordion = new Accordion('[data-accordion="faq"] dt');
 accordion.init();
 
-initTabNav();
+const tabnav = new TabNav(".lista-animais-imagens li", ".animais-descricao section");
+tabnav.init();
+
 initModal();
 initToolTip();
 initDropdownMenu();

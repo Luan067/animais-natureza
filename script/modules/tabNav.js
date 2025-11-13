@@ -1,14 +1,24 @@
-export default function initTabNav() {
-  const listaAnimaisIMG = document.querySelectorAll(".lista-animais-imagens li");
-  const animaisDesc = document.querySelectorAll(".animais-descricao section");
-
-  function addAtivo(index) {
-    animaisDesc.forEach((value) => value.classList.remove("ativo"));
-    animaisDesc[index].classList.add("ativo", animaisDesc[index].dataset.anime);
+export default class TabNav {
+  constructor(list, desc, activeClass = "ativo") {
+    this.list = document.querySelectorAll(list);
+    this.desc = document.querySelectorAll(desc);
+    this.activeClass = activeClass;
   }
 
-  if (listaAnimaisIMG.length && animaisDesc.length) {
-    animaisDesc[0].classList.add("ativo");
-    listaAnimaisIMG.forEach((img, indexIMG) => img.addEventListener("click", () => addAtivo(indexIMG)));
+  addActive(index) {
+    this.desc.forEach((value) => value.classList.remove(this.activeClass));
+    this.desc[index].classList.add(this.activeClass, this.desc[index].dataset.anime);
+  }
+
+  addEventToList() {
+    this.list.forEach((img, indexIMG) => img.addEventListener("click", () => this.addActive(indexIMG)));
+  }
+
+  init() {
+    if (this.list.length && this.desc.length) {
+      this.desc[0].classList.add(this.activeClass);
+      this.addEventToList();
+    }
+    return this;
   }
 }
