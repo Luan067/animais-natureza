@@ -1,4 +1,4 @@
-import initContador from "./contador.js";
+import Contador from "./contador.js";
 export default function initFetchAnimais() {
   const contadorGrid = document.querySelector(".contador-grid");
 
@@ -9,7 +9,8 @@ export default function initFetchAnimais() {
       animaisAPI.forEach((animal) => {
         criarDiv(animal.especie, animal.quantidade);
       });
-      initContador();
+      const contador = new Contador('[data-contador="numero"]', ".contador", "animThis");
+      contador.init();
     } catch (erro) {
       console.log(erro);
     }
