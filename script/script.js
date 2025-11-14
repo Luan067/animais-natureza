@@ -4,7 +4,7 @@ import TabNav from "./modules/tabNav.js";
 import Modal from "./modules/modal.js";
 import ToolTip from "./modules/tooltip.js";
 import ScrollAnim from "./modules/scroll-animation.js";
-import initDropdownMenu from "./modules/dropdown-menu.js";
+import DropdownMenu from "./modules/dropdown-menu.js";
 import initMobileMenu from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
@@ -28,7 +28,9 @@ tooltip.init();
 const scrollanim = new ScrollAnim('[data-anime="scroll"]');
 scrollanim.init();
 
-initDropdownMenu();
+const dropdown = new DropdownMenu("[data-dropdown]", ["click", "touchstart"]);
+dropdown.init();
+
 initMobileMenu();
 initFuncionamento();
 initFetchAnimais();
