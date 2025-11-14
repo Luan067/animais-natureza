@@ -5,7 +5,7 @@ import Modal from "./modules/modal.js";
 import ToolTip from "./modules/tooltip.js";
 import ScrollAnim from "./modules/scroll-animation.js";
 import DropdownMenu from "./modules/dropdown-menu.js";
-import initMobileMenu from "./modules/menu-mobile.js";
+import MenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBtc from "./modules/fetch-btc.js";
@@ -31,7 +31,9 @@ scrollanim.init();
 const dropdown = new DropdownMenu("[data-dropdown]", ["click", "touchstart"]);
 dropdown.init();
 
-initMobileMenu();
+const menumobile = new MenuMobile('[data-menu="button"]', '[data-menu="lista"]');
+menumobile.init();
+
 initFuncionamento();
 initFetchAnimais();
 initFetchBtc();
