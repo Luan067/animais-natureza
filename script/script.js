@@ -9,6 +9,7 @@ import MenuMobile from "./modules/menu-mobile.js";
 import Funcionamento from "./modules/funcionamento.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBtc from "./modules/fetch-btc.js";
+import SlideNav from "./modules/slide.js";
 
 const smoothScroll = new SmoothScroll('[data-scroll="suave"] a[href^="#"]');
 smoothScroll.init();
@@ -34,8 +35,12 @@ dropdown.init();
 const menumobile = new MenuMobile('[data-menu="button"]', '[data-menu="lista"]');
 menumobile.init();
 
-const funcionamento = new Funcionamento('[data-semana]', 'lojaAberta');
+const funcionamento = new Funcionamento("[data-semana]", "lojaAberta");
 funcionamento.init();
+
+const slide = new SlideNav(".slide", ".slide-container");
+slide.init();
+slide.addControl(".custom-controls");
 
 initFetchAnimais();
 initFetchBtc();
