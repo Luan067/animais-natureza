@@ -31,7 +31,7 @@
         </li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#contato">CONTATO</a></li>
-        <li><a href="" data-modal="abrir">Login →</a></li>
+        <li><a href="" data-modal="abrir">Login <span class="arrow-black"></span></a></li>
       </ul>
     </nav>
 
@@ -109,14 +109,14 @@
     </section>
 
     <section class="grid-section galeria" data-anime="scroll">
-      <div class="custom-controls">
+      <ul class="custom-controls">
         <li><img src="./img/slide/foto1-thumb.jpg" alt=""></li>
         <li><img src="./img/slide/foto2-thumb.jpg" alt=""></li>
         <li><img src="./img/slide/foto3-thumb.jpg" alt=""></li>
         <li><img src="./img/slide/foto4-thumb.jpg" alt=""></li>
         <li><img src="./img/slide/foto5-thumb.jpg" alt=""></li>
         <li><img src="./img/slide/foto6-thumb.jpg" alt=""></li>
-      </div>
+      </ul>
 
       <div class="slide-container">
         <ul class="slide">
@@ -153,12 +153,14 @@
 
   <section class="modal-container" data-modal="container">
     <div class="modal">
-      <button class="fechar" data-modal="fechar">X</button>
+      <button class="fechar" data-modal="fechar"></button>
       <form action="">
         <label for="email">Email</label>
-        <input type="text" for="email"" id=" email">
+        <input type="text" id="email">
+
         <label for="senha">Senha</label>
-        <input type="password" for="senha"" id=" senha">
+        <input type="password" id=senha">
+
         <button type="submit">Entrar</button>
       </form>
     </div>

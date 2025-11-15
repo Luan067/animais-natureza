@@ -11,7 +11,7 @@
 [data-dropdown]:hover .dropdown,
 [data-dropdown].showDropDown .dropdown {
   display: block;
-  animation: dropDownAnimation .3s ease forwards;
+  animation: dropDownAnimation 0.3s ease forwards;
 }
 
 @keyframes dropDownAnimation {
@@ -33,9 +33,8 @@
   border: 2px solid #333;
 }
 
-
 .dropdown::before {
-  content: '';
+  content: "";
   display: block;
   top: -10px;
   width: 0px;
@@ -48,4 +47,11 @@
 
 .dropdown li a:hover {
   color: white;
+}
+
+@media (max-width: 700px) {
+  [data-dropdown] .dropdown {
+    display: block;
+    animation: dropDownAnimation 0.3s ease forwards;
+  }
 }

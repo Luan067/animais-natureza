@@ -1,7 +1,7 @@
 import outsideClick from "./outsideClick.js";
 
 export default class MenuMobile {
-  constructor(button, list, events = ["click", "touchstart"]) {
+  constructor(button, list, events = ["click"]) {
     this.menuButton = document.querySelector(button);
     this.menuLista = document.querySelector(list);
     this.events = events;
@@ -9,7 +9,7 @@ export default class MenuMobile {
   }
 
   showMenu(event) {
-    if (event) event.preventDefault();
+    event.preventDefault();
 
     this.menuLista.classList.add("showMenu");
     this.menuButton.classList.add("showMenu");
