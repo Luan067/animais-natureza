@@ -202,11 +202,18 @@ body {
 }
 
 .js [data-accordion="faq"] dt::after {
-  content: '⬏';
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: url("../img/arrow-red.svg") no-repeat center center;
+  transform: rotate(90deg);
+  transition: transform .3s;
 }
 
 .js [data-accordion="faq"] dt.ativo::after {
-  content: '↴';
+  content: '';
+  transform: rotate(-90deg);
 }
 
 .ativo {
@@ -237,6 +244,13 @@ body {
   background: #3F4;
   font-weight: bold;
   border-radius: 2px;
+}
+
+.arrow-black {
+  background: url('../img/arrow-black.svg') no-repeat center center;
+  display: inline-block;
+  width: 8px;
+  height: 10px;
 }
 
 @keyframes showDown {

@@ -106,12 +106,14 @@ export class Slide {
   }
 
   onResize() {
-    this.slidesConfig();
-    this.changeSlide(this.index.active);
+    setTimeout(() => {
+      this.slidesConfig();
+      this.changeSlide(this.index.active);
+    }, 1000);
   }
 
   addResizeEvent() {
-    window.addEventListener("resize", this.onResize);
+    window.addEventListener('resize', this.onResize);
   }
 
   bindEvents() {
