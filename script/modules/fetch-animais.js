@@ -4,7 +4,7 @@ export default function initFetchAnimais() {
 
   async function fetchAnimais() {
     try {
-      const animaisResponse = await fetch("animais.json");
+      const animaisResponse = await fetch("/animais.json");
       const animaisAPI = await animaisResponse.json();
       animaisAPI.forEach((animal) => {
         criarDiv(animal.especie, animal.quantidade);
